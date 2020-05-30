@@ -14,7 +14,7 @@ GPIO.output(in1,GPIO.LOW)
 GPIO.output(in2,GPIO.LOW)
 p=GPIO.PWM(en,1000)
 
-p.start(25)
+p.start(45)
 print("\n")
 print("The default speed & direction of motor is LOW & Forward.....")
 print("r-run s-stop f-forward b-backward l-low m-medium h-high e-exit")
@@ -60,7 +60,7 @@ while(1):
 
     elif x=='l':
         print("low")
-        p.ChangeDutyCycle(25)
+        p.ChangeDutyCycle(25.5)
         x='z'
 
     elif x=='m':
